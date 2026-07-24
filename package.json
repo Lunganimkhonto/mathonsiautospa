@@ -1,0 +1,13 @@
+{
+    "name": "mathonsiautospa",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "serve .",
+        "preview": "http-server . -p 8000"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "serve": "^14.1.2"
+    }
+}
