@@ -244,6 +244,13 @@ body {
     margin-top: 28px;
 }
 
+.heading {
+    margin-bottom: 28px;
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 1.05;
+}
+
 .booking-form,
 .booking-preview,
 .contact-grid {
@@ -351,24 +358,35 @@ body {
 }
 
 .gallery-item {
-    border-radius: 24px;
+    position: relative;
     overflow: hidden;
-    background: var(--surface);
-    border: 1px solid var(--border);
+    border-radius: 22px;
+    border: 2px solid var(--border);
+    border-color: rgb(118, 161, 255);
     box-shadow: var(--shadow);
 }
 
 .gallery-item img {
     width: 100%;
-    display: block;
-    height: 240px;
+    height: 300px;
     object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
 }
 
 .gallery-item figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 18px;
-    margin: 0;
-    color: var(--text-muted);
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
 }
 
 .cards-grid,
