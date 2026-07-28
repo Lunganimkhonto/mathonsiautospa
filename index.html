@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mathonsiautospa</title>
+    <title>Mathonsiautospa & Entertainment</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -21,7 +21,9 @@
             <nav class="site-nav">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
                 <a href="#entertainment">Entertainment</a>
+                <a href="#testimonials">Reviews</a>
                 <a href="#book">Book</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -37,7 +39,9 @@
                         luxury experience for your vehicle and your downtime.</p>
                     <div class="hero-actions">
                         <a class="btn btn-primary" href="#book">Reserve Now</a>
-                        <a class="btn btn-secondary" href="#entertainment">View Events</a>
+                        <a class="btn btn-secondary"
+                            href="https://wa.me/27635092426?text=Hi%20Mathonsiautospa%2C%20I%20would%20like%20to%20book%20a%20service"
+                            target="_blank">WhatsApp Us</a>
                     </div>
                 </div>
                 <div class="hero-media">
@@ -179,26 +183,49 @@
                 </div>
             </section>
 
-            <section id="gallery" class="section-block">
+            <section id="testimonials" class="section-block">
+                <div class="section-intro">
+                    <p class="eyebrow">Testimonials</p>
+                    <h2>Loved by our customers.</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best car wash experience I've had! The team is professional and my car looks amazing."</p>
+                        <p class="testimonial-author">- Thabo M.</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Love the entertainment lounge while waiting. Great music, clean space, and excellent
+                            service!"</p>
+                        <p class="testimonial-author">- Nomusa K.</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Affordable pricing with premium quality. Definitely coming back for the full detailing
+                            service."</p>
+                        <p class="testimonial-author">- Johnson N.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="gallery" class="section-block section-light">
                 <div class="section-intro">
                     <p class="eyebrow">Gallery</p>
-                </div>
-                <div class="heading">
                     <h2>Preview the space before your visit.</h2>
-
                 </div>
                 <div class="gallery-grid">
                     <figure class="gallery-item">
-                        <img src="images/entertainment_lounge.jpg" alt="Mathonsiautospa entertainment lounge preview" />
+                        <img src="images/place-1.jpg" alt="Mathonsiautospa interior lounge preview" />
                         <figcaption>Relaxing entertainment lounge</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <img src="images/autocare_bays.jpg" alt="Car service area at Mathonsiautospa" />
+                        <img src="images/place-2.jpg" alt="Car service area at Mathonsiautospa" />
                         <figcaption>Premium auto care bays</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <img src="images/efficient_detailing_station.png" alt="Efficient detailing station" />
-                        <figcaption>Efficient detailing station</figcaption>
+                        <img src="images/place-3.jpg" alt="Luxury car detailing station" />
+                        <figcaption>Luxury detailing stations</figcaption>
                     </figure>
                 </div>
             </section>
@@ -221,12 +248,19 @@
                             <input type="email" name="email" placeholder="you@example.com" required />
                         </label>
                         <label>
+                            Phone (WhatsApp)
+                            <input type="tel" name="phone" placeholder="+27 63 509 2426" />
+                        </label>
+                        <label>
                             Service
-                            <select name="service">
+                            <select name="service" required>
+                                <option value="">Select a service...</option>
                                 <option>Full Exterior Detail</option>
                                 <option>Interior Refresh</option>
                                 <option>Maintenance Wash</option>
+                                <option>Express Detailing</option>
                                 <option>Entertainment Lounge Pass</option>
+                                <option>Other</option>
                             </select>
                         </label>
                         <label>
@@ -238,8 +272,10 @@
                             <textarea name="message" rows="4" placeholder="Any special requests?"></textarea>
                         </label>
                         <button type="submit" class="btn btn-primary">Submit Booking</button>
-                        <p id="bookingSuccess" class="success-message" hidden>Thanks! Your request has been received.
+                        <p id="bookingSuccess" class="success-message" hidden>✓ Thanks! Your booking has been received.
+                            We'll contact you soon.
                         </p>
+                        <p id="bookingError" class="error-message" hidden></p>
                     </form>
                     <div class="booking-preview">
                         <h3>Why choose Mathonsiautospa?</h3>
@@ -262,26 +298,51 @@
                 </div>
                 <div class="contact-grid">
                     <div class="contact-card">
-                        <h3>Enquiries</h3>
-                        <p>063 5092 426<br />084 6988 197</p>
+                        <h3>📞 Enquiries</h3>
+                        <p><a href="tel:+27635092426">063 5092 426</a><br /><a href="tel:+27846988197">084 6988 197</a>
+                        </p>
                     </div>
                     <div class="contact-card">
-                        <h3>Email</h3>
+                        <h3>✉️ Email</h3>
                         <p><a href="mailto:osmathonsi@gmail.com">osmathonsi@gmail.com</a></p>
                     </div>
                     <div class="contact-card">
-                        <h3>Visit Us</h3>
+                        <h3>💬 WhatsApp</h3>
+                        <p><a href="https://wa.me/27635092426" target="_blank">Message us on WhatsApp</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📍 Visit Us</h3>
                         <p>Cato Ridge, across fire station<br />Carwash Durban, KwaZulu-Natal</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>⏰ Hours</h3>
+                        <p>Monday - Sunday<br />7:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📱 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/27635092426" target="_blank" title="WhatsApp">WhatsApp</a>
+                            <a href="https://facebook.com" target="_blank" title="Facebook">Facebook</a>
+                            <a href="https://instagram.com" target="_blank" title="Instagram">Instagram</a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
         <footer class="site-footer">
-            <p align="center">© 2026 Mathonsiautospa Based in Cato Ridge, Durban, KwaZulu-Natal.</p>
+            <p align="center">© 2026 Mathonsiautospa & Entertainment. Based in Cato Ridge, Durban, KwaZulu-Natal.</p>
         </footer>
     </div>
     <script src="script.js"></script>
+    <!-- Google Analytics (add your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA_ID');
+    </script>
 </body>
 
 </html>
