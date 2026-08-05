@@ -4,6 +4,8 @@ This guide will help you deploy your website to a real domain that people can ac
 
 ## Step 1: Choose Your Hosting Service
 
+> Important: GitHub is only where your project code lives. It is not the web server that will serve your website to the public. The website must be deployed to a hosting service such as Render or Railway, and your GoDaddy domain must then be pointed to that host.
+
 ### Recommended Options:
 
 | Service | Price | Setup Time | Node.js Support | Verdict |
