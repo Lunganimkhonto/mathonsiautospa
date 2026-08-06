@@ -69,6 +69,15 @@ body {
     font-size: 1.2rem;
 }
 
+.brand-image {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
 .brand h1 {
     margin: 0;
     font-size: 1.2rem;
